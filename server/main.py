@@ -20,7 +20,7 @@ from services.file import get_document_from_file
 from models.models import DocumentMetadata, Source
 
 bearer_scheme = HTTPBearer()
-BEARER_TOKEN = os.environ.get("BEARER_TOKEN")
+BEARER_TOKEN = os.environ.get("BEARER_TOKEN") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2NpYW0ifQ.DhING5hZ4dEOAxvf1mJpHSHbCXW3CJIJRqmbrZyQlxU"
 assert BEARER_TOKEN is not None
 
 
@@ -38,7 +38,7 @@ sub_app = FastAPI(
     title="Retrieval Plugin API",
     description="A retrieval API for querying and filtering documents based on natural language queries and metadata",
     version="1.0.0",
-    servers=[{"url": "https://clownfish-app-rnax4.ondigitalocean.app"}],
+    servers=[{"url": "https://squid-app-t32ht.ondigitalocean.app"}],
     dependencies=[Depends(validate_token)],
 )
 app.mount("/sub", sub_app)
