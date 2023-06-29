@@ -20,7 +20,7 @@ from services.file import get_document_from_file
 from models.models import DocumentMetadata, Source
 
 bearer_scheme = HTTPBearer()
-BEARER_TOKEN = os.environ.get("BEARER_TOKEN") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2NpYW0ifQ.DhING5hZ4dEOAxvf1mJpHSHbCXW3CJIJRqmbrZyQlxU"
+BEARER_TOKEN = os.environ.get("BEARER_TOKEN") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2NpYW0gUGFyaXMifQ.eftxlqE7iHo4XxUuj6ClkySwrKzJcXn0213LT5F86T8"
 assert BEARER_TOKEN is not None
 
 
