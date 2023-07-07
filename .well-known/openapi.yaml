@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: This API lets you search through the LangChain Documentation.
 servers:
-  - url: https://monkfish-app-ofohl.ondigitalocean.app
+  - url: https://starfish-app-tvome.ondigitalocean.app
 paths:
   /query:
     post:

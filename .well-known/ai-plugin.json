@@ -1,7 +1,7 @@
 {
   "schema_version": "v1",
-  "name_for_model": "SCIAM_langchain_docs",
-  "name_for_human": "SCIAM Retrieval Plugin test",
+  "name_for_model": "SCIAM_langchain_documentation",
+  "name_for_human": "SCIAM Retrieval Plugin",
   "description_for_model": "Use this tool to get up to date information about the LangChain Python Library. Do not use this tool if the user did not ask about LangChain",
   "description_for_human": "Up to date information about LangChain Python Library.",
   "auth": {
@@ -10,10 +10,14 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://monkfish-app-ofohl.ondigitalocean.app/.well-known/openapi.yaml",
+    "url": "https://starfish-app-tvome.ondigitalocean.app/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://monkfish-app-ofohl.ondigitalocean.app/.well-known/logo.png",
+  "logo_url": "https://starfish-app-tvome.ondigitalocean.app/.well-known/logo1.png",
   "contact_email": "hello@contact.com", 
   "legal_info_url": "http://example.com/legal-info"
 }
+
+
+
+

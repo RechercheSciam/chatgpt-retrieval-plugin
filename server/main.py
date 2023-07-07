@@ -38,7 +38,7 @@ sub_app = FastAPI(
     title="Retrieval Plugin API",
     description="A retrieval API for querying and filtering documents based on natural language queries and metadata",
     version="1.0.0",
-    servers=[{"url": "https://monkfish-app-ofohl.ondigitalocean.app"}],
+    servers=[{"url": "https://starfish-app-tvome.ondigitalocean.app"}],
     dependencies=[Depends(validate_token)],
 )
 app.mount("/sub", sub_app)
