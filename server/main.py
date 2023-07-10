@@ -20,13 +20,15 @@ from services.file import get_document_from_file
 from models.models import DocumentMetadata, Source
 
 bearer_scheme = HTTPBearer()
-BEARER_TOKEN = os.environ.get("BEARER_TOKEN") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2NpYW0gUGFyaXMifQ.eftxlqE7iHo4XxUuj6ClkySwrKzJcXn0213LT5F86T8"
+BEARER_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2NpYW0gUGFyaXMifQ.eftxlqE7iHo4XxUuj6ClkySwrKzJcXn0213LT5F86T8"
 assert BEARER_TOKEN is not None
 
 
 def validate_token(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)):
     if credentials.scheme != "Bearer" or credentials.credentials != BEARER_TOKEN:
+        print("############# invalid bearer token ##########")
         raise HTTPException(status_code=401, detail="Invalid or missing token")
+    
     return credentials
 
 
@@ -38,7 +40,7 @@ sub_app = FastAPI(
     title="Retrieval Plugin API",
     description="A retrieval API for querying and filtering documents based on natural language queries and metadata",
     version="1.0.0",
-    servers=[{"url": "https://lobster-app-fhb25.ondigitalocean.app"}],
+    servers=[{"url": "https://sea-turtle-app-72l8h.ondigitalocean.app"}],
     dependencies=[Depends(validate_token)],
 )
 app.mount("/sub", sub_app)
