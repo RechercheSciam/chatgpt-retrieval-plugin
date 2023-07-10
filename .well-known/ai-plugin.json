@@ -10,10 +10,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://starfish-app-tvome.ondigitalocean.app/.well-known/openapi.yaml",
+    "url": "https://dolphin-app-j9m68.ondigitalocean.app/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://starfish-app-tvome.ondigitalocean.app/.well-known/logo1.png",
+  "logo_url": "https://dolphin-app-j9m68.ondigitalocean.app/.well-known/logo1.png",
   "contact_email": "hello@contact.com", 
   "legal_info_url": "http://example.com/legal-info"
 }
